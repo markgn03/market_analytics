@@ -1,2 +1,2 @@
-# zalando_market_analytics
-ETL pipeline and advanced SQL/Python analytics for Zalando dataset
+# Market Analytics Project
+ETL pipeline and advanced SQL/Python analytics for dataset

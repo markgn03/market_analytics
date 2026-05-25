@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:15
+    container_name: zalando_postgres
+    environment:
+      POSTGRES_USER: analyst
+      POSTGRES_PASSWORD: market_analytics_2026
+      POSTGRES_DB: zalando_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./database:/docker-entrypoint-initdb.d
+
+volumes:
+  pgdata:
